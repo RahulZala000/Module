@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">@color/colorMint</color>
+    <color name="colorPrimaryDark">@color/colorMint</color>
+    <color name="colorAccent">@color/textColorGray</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorMint">#6EE6C8</color>
+    <color name="colorGold">#E6DC6E</color>
+    <color name="colorGrayLight">#54565A</color>
+    <color name="colorGrayDark">#222426</color>
+    <color name="colorCarmin">#F03C5A</color>
+    <color name="colorPurple">#785AB4</color>
+    <color name="colorOrange">#F0A032</color>
+    <color name="colorLime">#A5DC4B</color>
+    <color name="colorBlueLight">#6EC8E6</color>
+    <color name="colorViolet">#DC5AA0</color>
+    <color name="colorGreen">#28B478</color>
+    <color name="colorBlueSky">#288CC8</color>
+
+    <color name="textColorGray">#3E414E</color>
+
+    <color name="btnColorGreen">@color/colorMint</color>
+    <color name="btnColorWhite">@color/white</color>
+</resources>

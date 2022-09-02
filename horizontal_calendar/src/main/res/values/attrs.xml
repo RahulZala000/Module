@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RowCalendarView">
+        <!-- Default text color for all texts -->
+        <attr name="textColorNormal" format="color" />
+        <!-- Default Day text color -->
+        <attr name="colorDayText" format="color" />
+        <!-- Default Date text color -->
+        <attr name="colorDateText" format="color" />
+
+        <!-- Selected item's text color for all texts -->
+        <attr name="textColorSelected" format="color" />
+        <!-- Selected item's Day text color -->
+        <attr name="colorDayTextSelected" format="color" />
+        <!-- Selected item's Date text color -->
+        <attr name="colorDateTextSelected" format="color" />
+        <!-- Selected item's background drawable -->
+        <attr name="selectedDateBackground" format="reference" />
+
+        <!-- Background color for selector bar. -->
+        <attr name="selectorColor" format="color" />
+
+        <!-- Top text size -->
+        <attr name="sizeDayText" format="dimension" />
+        <!-- Middle text size -->
+        <attr name="sizeDateText" format="dimension" />
+
+    </declare-styleable>
+</resources>
