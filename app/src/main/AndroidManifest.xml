@@ -13,13 +13,13 @@
         android:supportsRtl="true"
         tools:targetApi="31">
         <activity
+            android:name=".DayActivity"
+            android:exported="false" />
+        <activity
             android:name=".EventActivity"
             android:exported="false" />
         <activity
             android:name=".CalenderActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.rahul.calendardayweekview.WeekActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

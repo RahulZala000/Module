@@ -11,9 +11,9 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.rahul.calendardayweekview.AdapterClickListener
 import stepper.module.databinding.ActivityCalenderBinding
 import java.time.LocalDateTime
+import com.rahul.calendardayweekview.AdapterClickListener
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -37,6 +37,11 @@ class CalenderActivity : AppCompatActivity() {
 
         var weekview=binding.weekview
 
+        binding.dayview.setOnClickListener{
+            startActivity(Intent(this,DayActivity::class.java))
+        }
+
+
         resultlaucer = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
 
@@ -47,17 +52,18 @@ class CalenderActivity : AppCompatActivity() {
                //adapter.notifyDataSetChanged()
                 setevent()
             }
+
+
         }
 
         setevent()
 
-        weekview.listner= object :AdapterClickListener{
+        weekview.listner= object : AdapterClickListener {
             override fun onItemClick(view: View?, pos: Int, `object`: Any?) {
                 date= `object` as LocalDateTime
                 Toast.makeText(this@CalenderActivity,date.toLocalDate().toString(),Toast.LENGTH_SHORT).show()
                 adapter.addevent(viewmodel.datefilter(date.toLocalDate()))
                 adapter.notifyDataSetChanged()
-
             }
         }
     }

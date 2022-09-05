@@ -16,6 +16,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "stepper"
 include ':app'
-include ':CalendarDayWeek'
 include ':horizontal_stepper'
-include ':calendardayweekview'
+include ':calendarweekview'
+include ':calendardayview'

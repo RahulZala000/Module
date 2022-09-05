@@ -10,9 +10,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/CalendarDayWeek" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/calendardayweekview" />
+            <option value="$PROJECT_DIR$/calendardayview" />
+            <option value="$PROJECT_DIR$/calendarweekview" />
             <option value="$PROJECT_DIR$/horizontal_stepper" />
           </set>
         </option>

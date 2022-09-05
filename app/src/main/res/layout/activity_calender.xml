@@ -4,16 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context=".CalenderActivity">
 
-    <com.rahul.calendardayweekview.WeekActivity
+    <com.rahul.calendardayweekview.WeekView
         android:id="@+id/weekview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/button"
@@ -30,7 +27,17 @@
         android:id="@+id/eventListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:layout_editor_absoluteX="0dp" />
 
+    <Button
+        android:id="@+id/dayview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dayview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventListView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

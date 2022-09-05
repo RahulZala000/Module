@@ -19,6 +19,11 @@
         <entry key="../stepper/calendardayweekview/src/main/res/layout/activity_event_edit.xml" value="0.3885416666666667" />
         <entry key="../stepper/calendardayweekview/src/main/res/layout/calendar_cell_layout.xml" value="0.2640625" />
         <entry key="../stepper/horizontal_stepper/src/main/res/layout/layout_stepper.xml" value="0.21822916666666667" />
+        <entry key="..\:/Module/app/src/main/res/layout/activity_calender.xml" value="0.18070652173913043" />
+        <entry key="..\:/Module/app/src/main/res/layout/activity_day.xml" value="0.18070652173913043" />
+        <entry key="..\:/Module/calendardayview/src/main/res/drawable/icon_arrow_left_24.xml" value="0.198" />
+        <entry key="..\:/Module/calendardayview/src/main/res/layout/layout_dayview.xml" value="0.18070652173913043" />
+        <entry key="..\:/Module/calendardayweekview/src/main/res/layout/activity_day.xml" value="0.18070652173913043" />
         <entry key="app/src/main/res/layout/activity_calender.xml" value="0.2740740740740741" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.38256410256410256" />
         <entry key="horizontal_calendar/src/main/res/layout/row_calendar.xml" value="0.22552083333333334" />
@@ -34,7 +39,7 @@
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17_PREVIEW" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
