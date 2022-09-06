@@ -34,6 +34,8 @@ class DayActivity : AppCompatActivity() {
 
         viewmodel = ViewModelProvider(this)[EventViewmodel::class.java]
 
+
+
         var dayview = binding.dayview
         setevent()
         resultlaucer = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -59,9 +61,10 @@ class DayActivity : AppCompatActivity() {
     }
 
     fun newEventAction(view: View) {
-        var intent = Intent(this, EventActivity::class.java)
+        var intent = Intent(this, MonthActivity::class.java)
         intent.putExtra("Date", date)
-        resultlaucer.launch(intent)
+        startActivity(intent)
+      //  resultlaucer.launch(intent)
 
     }
 

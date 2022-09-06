@@ -21,9 +21,12 @@
         <entry key="../stepper/horizontal_stepper/src/main/res/layout/layout_stepper.xml" value="0.21822916666666667" />
         <entry key="..\:/Module/app/src/main/res/layout/activity_calender.xml" value="0.18070652173913043" />
         <entry key="..\:/Module/app/src/main/res/layout/activity_day.xml" value="0.18070652173913043" />
+        <entry key="..\:/Module/app/src/main/res/layout/activity_month.xml" value="0.19157608695652173" />
         <entry key="..\:/Module/calendardayview/src/main/res/drawable/icon_arrow_left_24.xml" value="0.198" />
         <entry key="..\:/Module/calendardayview/src/main/res/layout/layout_dayview.xml" value="0.18070652173913043" />
         <entry key="..\:/Module/calendardayweekview/src/main/res/layout/activity_day.xml" value="0.18070652173913043" />
+        <entry key="..\:/Module/monthview/src/main/res/layout/calendar_cell_layout.xml" value="0.19157608695652173" />
+        <entry key="..\:/Module/monthview/src/main/res/layout/monthview.xml" value="0.19157608695652173" />
         <entry key="app/src/main/res/layout/activity_calender.xml" value="0.2740740740740741" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.38256410256410256" />
         <entry key="horizontal_calendar/src/main/res/layout/row_calendar.xml" value="0.22552083333333334" />
