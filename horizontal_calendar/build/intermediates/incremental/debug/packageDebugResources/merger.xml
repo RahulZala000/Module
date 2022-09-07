@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3" xmlns:ns1="http://schemas.android.com/tools"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res"><file path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/drawable-v24/ic_launcher_foreground.xml" preprocessing="true" qualifiers="v24"><generated-file path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml" qualifiers="anydpi-v24" type="drawable"/></file></source><source path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/build/generated/res/rs/debug"/><source path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res"><file name="ic_launcher" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/mipmap-mdpi/ic_launcher.webp" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/mipmap-mdpi/ic_launcher_round.webp" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/mipmap-hdpi/ic_launcher.webp" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/mipmap-hdpi/ic_launcher_round.webp" qualifiers="hdpi-v4" type="mipmap"/><file name="dr_bg_button_white" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/drawable/dr_bg_button_white.xml" qualifiers="" type="drawable"/><file name="dr_bg_button_green" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/drawable/dr_bg_button_green.xml" qualifiers="" type="drawable"/><file name="ic_launcher_background" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/drawable/ic_launcher_background.xml" qualifiers="" type="drawable"/><file name="ic_launcher" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="row_calendar" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/layout/row_calendar.xml" qualifiers="" type="layout"/><file name="ic_launcher" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/mipmap-xxhdpi/ic_launcher.webp" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" qualifiers="xxhdpi-v4" type="mipmap"/><file path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/values/colors.xml" qualifiers=""><color name="colorPrimary">@color/colorMint</color><color name="colorPrimaryDark">@color/colorMint</color><color name="colorAccent">@color/textColorGray</color><color name="purple_200">#FFBB86FC</color><color name="purple_500">#FF6200EE</color><color name="purple_700">#FF3700B3</color><color name="teal_200">#FF03DAC5</color><color name="teal_700">#FF018786</color><color name="black">#FF000000</color><color name="white">#FFFFFFFF</color><color name="colorMint">#6EE6C8</color><color name="colorGold">#E6DC6E</color><color name="colorGrayLight">#54565A</color><color name="colorGrayDark">#222426</color><color name="colorCarmin">#F03C5A</color><color name="colorPurple">#785AB4</color><color name="colorOrange">#F0A032</color><color name="colorLime">#A5DC4B</color><color name="colorBlueLight">#6EC8E6</color><color name="colorViolet">#DC5AA0</color><color name="colorGreen">#28B478</color><color name="colorBlueSky">#288CC8</color><color name="textColorGray">#3E414E</color><color name="btnColorGreen">@color/colorMint</color><color name="btnColorWhite">@color/white</color></file><file path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/values/styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:forceDarkAllowed" ns1:targetApi="q">false</item>
+    </style><style name="AppThemeStatusBar" parent="AppTheme">
+        
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorPrimaryDark">@color/white</item>
+    </style><style name="TextView_Medium">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textColorGray</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style><style name="TextView_Small">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textColor">@color/textColorGray</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:ellipsize">end</item>
+    </style></file><file path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">demo_module</string></file><file path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/values/attrs.xml" qualifiers=""><declare-styleable name="RowCalendarView">
+        
+        <attr format="color" name="textColorNormal"/>
+        
+        <attr format="color" name="colorDayText"/>
+        
+        <attr format="color" name="colorDateText"/>
+
+        
+        <attr format="color" name="textColorSelected"/>
+        
+        <attr format="color" name="colorDayTextSelected"/>
+        
+        <attr format="color" name="colorDateTextSelected"/>
+        
+        <attr format="reference" name="selectedDateBackground"/>
+
+        
+        <attr format="color" name="selectorColor"/>
+
+        
+        <attr format="dimension" name="sizeDayText"/>
+        
+        <attr format="dimension" name="sizeDateText"/>
+
+    </declare-styleable></file><file name="ic_launcher" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/mipmap-xhdpi/ic_launcher.webp" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" qualifiers="xhdpi-v4" type="mipmap"/><file name="montserrat_medium" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/font/montserrat_medium.ttf" qualifiers="" type="font"/><file name="montserrat_semibold" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/font/montserrat_semibold.ttf" qualifiers="" type="font"/><file name="montserrat_light" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/font/montserrat_light.ttf" qualifiers="" type="font"/><file name="montserrat" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/font/montserrat.ttf" qualifiers="" type="font"/><file name="montserrat_bold" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/font/montserrat_bold.ttf" qualifiers="" type="font"/><file name="ic_launcher" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/></source><source path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/build/generated/res/rs/debug"/><source path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="RowCalendarView">
+        
+        <attr format="color" name="textColorNormal"/>
+        
+        <attr format="color" name="colorDayText"/>
+        
+        <attr format="color" name="colorDateText"/>
+
+        
+        <attr format="color" name="textColorSelected"/>
+        
+        <attr format="color" name="colorDayTextSelected"/>
+        
+        <attr format="color" name="colorDateTextSelected"/>
+        
+        <attr format="reference" name="selectedDateBackground"/>
+
+        
+        <attr format="color" name="selectorColor"/>
+
+        
+        <attr format="dimension" name="sizeDayText"/>
+        
+        <attr format="dimension" name="sizeDateText"/>
+
+    </declare-styleable></configuration></mergedItems></merger>

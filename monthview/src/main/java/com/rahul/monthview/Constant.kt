@@ -1,8 +1,9 @@
 package com.rahul.monthview
 
+import java.time.LocalDate
 import java.time.LocalDateTime
 
 object Constant {
 
-    var selectdate= LocalDateTime.now()
+    var selectdate= LocalDate.now()
 }

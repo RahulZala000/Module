@@ -11,14 +11,22 @@
         <entry key="../stepper/app/src/main/res/layout/activity_day.xml" value="0.22552083333333334" />
         <entry key="../stepper/app/src/main/res/layout/activity_event.xml" value="0.37447916666666664" />
         <entry key="../stepper/app/src/main/res/layout/activity_main.xml" value="0.3885416666666667" />
+        <entry key="../stepper/app/src/main/res/layout/activity_month.xml" value="0.28177083333333336" />
         <entry key="../stepper/app/src/main/res/layout/calander_layout.xml" value="0.3885416666666667" />
         <entry key="../stepper/app/src/main/res/layout/event_cell.xml" value="0.2677083333333333" />
+        <entry key="../stepper/app/src/main/res/layout/fragment_day.xml" value="0.29583333333333334" />
+        <entry key="../stepper/app/src/main/res/layout/fragment_month.xml" value="0.28072916666666664" />
+        <entry key="../stepper/app/src/main/res/layout/fragment_week.xml" value="0.28072916666666664" />
         <entry key="../stepper/calendardayweekview/src/main/res/drawable/icon_arrow_left_24.xml" value="0.16" />
         <entry key="../stepper/calendardayweekview/src/main/res/layout/activity_day.xml" value="0.26510416666666664" />
         <entry key="../stepper/calendardayweekview/src/main/res/layout/activity_event.xml" value="0.3885416666666667" />
         <entry key="../stepper/calendardayweekview/src/main/res/layout/activity_event_edit.xml" value="0.3885416666666667" />
         <entry key="../stepper/calendardayweekview/src/main/res/layout/calendar_cell_layout.xml" value="0.2640625" />
+        <entry key="../stepper/calendarweekview/src/main/res/layout/weekview.xml" value="0.4036458333333333" />
         <entry key="../stepper/horizontal_stepper/src/main/res/layout/layout_stepper.xml" value="0.21822916666666667" />
+        <entry key="../stepper/monthview/src/main/res/drawable/icon_arrow_left_24.xml" value="0.1725" />
+        <entry key="../stepper/monthview/src/main/res/layout/calendar_cell_layout.xml" value="0.4036458333333333" />
+        <entry key="../stepper/monthview/src/main/res/layout/monthview.xml" value="0.27870370370370373" />
         <entry key="..\:/Module/app/src/main/res/layout/activity_calender.xml" value="0.18070652173913043" />
         <entry key="..\:/Module/app/src/main/res/layout/activity_day.xml" value="0.18070652173913043" />
         <entry key="..\:/Module/app/src/main/res/layout/activity_month.xml" value="0.19157608695652173" />
@@ -42,7 +50,7 @@
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

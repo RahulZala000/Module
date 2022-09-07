@@ -22,7 +22,7 @@ class CalenderActivity : AppCompatActivity() {
     lateinit var binding: ActivityCalenderBinding
     var date:LocalDateTime= LocalDateTime.now()
 
-    lateinit var viewmodel:EventViewmodel
+
     lateinit var event:EventModel
     lateinit var adapter: EventAdapter
 
@@ -33,14 +33,37 @@ class CalenderActivity : AppCompatActivity() {
         binding= ActivityCalenderBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        viewmodel=ViewModelProvider(this)[EventViewmodel::class.java]
+        var fragtran=supportFragmentManager.beginTransaction()
+        fragtran.replace(binding.calendar.id,DayFragment())
+        fragtran.commit()
 
-        var weekview=binding.weekview
 
-        binding.dayview.setOnClickListener{
-            startActivity(Intent(this,DayActivity::class.java))
+
+        binding.day.setOnClickListener {
+            var fragtran=supportFragmentManager.beginTransaction()
+            fragtran.replace(binding.calendar.id,DayFragment())
+            fragtran.commit()
         }
 
+        binding.week.setOnClickListener {
+            var fragtran=supportFragmentManager.beginTransaction()
+            fragtran.replace(binding.calendar.id,WeekFragment())
+            fragtran.commit()
+        }
+
+        binding.month.setOnClickListener {
+            var fragtran=supportFragmentManager.beginTransaction()
+            fragtran.replace(binding.calendar.id,MonthFragment())
+            fragtran.commit()
+        }
+
+
+        //var weekview=binding.weekview
+
+      /*  binding.dayview.setOnClickListener{
+            startActivity(Intent(this,DayActivity::class.java))
+        }
+*/
 
         resultlaucer = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
@@ -50,14 +73,14 @@ class CalenderActivity : AppCompatActivity() {
                 viewmodel.addevent(event)
               //  adapter.addevent(viewmodel.eventList)
                //adapter.notifyDataSetChanged()
-                setevent()
+              //  setevent()
             }
 
 
         }
 
-        setevent()
-
+       // setevent()
+/*
         weekview.listner= object : AdapterClickListener {
             override fun onItemClick(view: View?, pos: Int, `object`: Any?) {
                 date= `object` as LocalDateTime
@@ -65,17 +88,17 @@ class CalenderActivity : AppCompatActivity() {
                 adapter.addevent(viewmodel.datefilter(date.toLocalDate()))
                 adapter.notifyDataSetChanged()
             }
-        }
+        }*/
     }
 
     fun newEventAction(view: View) {
         var intent=Intent(this,EventActivity::class.java)
         intent.putExtra("Date",date)
         resultlaucer.launch(intent)
-        setevent()
+      //  setevent()
     }
 
-    fun setevent(){
+   /* fun setevent(){
 
         adapter = EventAdapter()
         binding.eventListView.layoutManager=LinearLayoutManager(this,LinearLayoutManager.VERTICAL,true)
@@ -85,6 +108,6 @@ class CalenderActivity : AppCompatActivity() {
         binding.eventListView.adapter!!.notifyDataSetChanged()
 
         Log.d("@event",viewmodel.eventList.size.toString())
-    }
+    }*/
 
 }

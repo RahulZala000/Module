@@ -1,0 +1,27 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.vimal.demo_module" >
+5
+6    <uses-sdk
+7        android:minSdkVersion="23"
+7-->/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/AndroidManifest.xml
+8        android:targetSdkVersion="31" />
+8-->/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/AndroidManifest.xml
+9
+10    <application
+10-->/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/AndroidManifest.xml:6:5-12:42
+11        android:allowBackup="true"
+11-->/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/AndroidManifest.xml:7:9-35
+12        android:icon="@mipmap/ic_launcher"
+12-->/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/AndroidManifest.xml:8:9-43
+13        android:label="@string/app_name"
+13-->/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/AndroidManifest.xml:9:9-41
+14        android:roundIcon="@mipmap/ic_launcher_round"
+14-->/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/AndroidManifest.xml:10:9-54
+15        android:supportsRtl="true"
+15-->/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/AndroidManifest.xml:11:9-35
+16        android:theme="@style/AppTheme" />
+16-->/Users/ztlab59/AndroidStudioProjects/stepper/horizontal_calendar/src/main/AndroidManifest.xml:12:9-40
+17
+18</manifest>

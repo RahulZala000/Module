@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:id="@+id/linear"
-    tools:parentTag="android.widget.LinearLayout"
-    android:layout_height="200dp"
-    tools:context=".MonthView">
+    tools:parentTag="android.widget.LinearLayout">
+<LinearLayout
 
-    <LinearLayout
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,14 +22,12 @@
 
         <ImageButton
             android:id="@+id/back"
+            android:src="@drawable/icon_arrow_left_24"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/icon_arrow_left_24"
             android:background="@null"
-            android:textStyle="bold"
-            android:onClick="previousWeekAction"
-            android:textSize="20sp" />
+            android:onClick="previousMonthAction" />
 
         <TextView
             android:id="@+id/monthYearTV"
@@ -45,13 +42,11 @@
         <ImageButton
             android:id="@+id/forward"
             android:layout_width="0dp"
+            android:src="@drawable/icon_arrow_right_24"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-
-            android:src="@drawable/icon_arrow_right_24"
             android:background="@null"
-            android:textStyle="bold"
-            android:onClick="nextWeekAction" />
+            android:onClick="nextMonthAction" />
 
     </LinearLayout>
 
@@ -65,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="SUN"
-            android:textColor="@color/teal_700"
+            android:textColor="@color/teal_200"
             android:textAlignment="center"
             android:textSize="16sp"/>
 
@@ -74,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="MON"
-            android:textColor="@color/teal_700"
+            android:textColor="@color/teal_200"
             android:textAlignment="center"
             android:textSize="16sp"/>
 
@@ -83,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="TUE"
-            android:textColor="@color/teal_700"
+            android:textColor="@color/teal_200"
             android:textAlignment="center"
             android:textSize="16sp"/>
 
@@ -92,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="WED"
-            android:textColor="@color/teal_700"
+            android:textColor="@color/teal_200"
             android:textAlignment="center"
             android:textSize="16sp"/>
 
@@ -101,7 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="THUR"
-            android:textColor="@color/teal_700"
+            android:textColor="@color/teal_200"
             android:textAlignment="center"
             android:textSize="16sp"/>
 
@@ -110,7 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="FRI"
-            android:textColor="@color/teal_700"
+            android:textColor="@color/teal_200"
             android:textAlignment="center"
             android:textSize="16sp"/>
 
@@ -119,7 +114,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="SAT"
-            android:textColor="@color/teal_700"
+            android:textColor="@color/teal_200"
             android:textAlignment="center"
             android:textSize="16sp"/>
 
@@ -133,23 +128,18 @@
         android:layout_height="0dp"
         android:layout_weight="1"/>
 
+</LinearLayout>
 
 
 
 
-    </LinearLayout>
+
+
+
+
+
+
+
+
 
 </merge>
-
-
-
-
-
-
-
-
-
-
-
-
-

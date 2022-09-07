@@ -65,8 +65,8 @@ class WeekView @JvmOverloads constructor(context: Context, attributeSet: Attribu
          })
         val layoutManager: RecyclerView.LayoutManager =
             GridLayoutManager(context.applicationContext, 7)
-        binding.calendarRecyclerView.setLayoutManager(layoutManager)
-        binding.calendarRecyclerView.setAdapter(adapter)
+        binding.weekrecycleview.setLayoutManager(layoutManager)
+        binding.weekrecycleview.setAdapter(adapter)
         //  setEventAdpater()
     }
 
