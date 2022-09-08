@@ -48,7 +48,6 @@ class MonthView @JvmOverloads constructor(context: Context,attributeSet: Attribu
         adapter = MonthCalendarAdapter(days, object : AdapterClickListener {
             override fun onItemClick(view: View?, pos: Int, `object`: Any?) {
                 Toast.makeText(context, days.get(pos).toString(), Toast.LENGTH_SHORT).show()
-
                 listner?.onItemClick(view,pos,`object`)
                 adapter.notifyDataSetChanged()
             }

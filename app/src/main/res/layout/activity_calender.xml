@@ -36,12 +36,20 @@
         app:layout_constraintTop_toTopOf="@+id/week" />
 
 
-    <FrameLayout
-        android:id="@+id/calendar"
+
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/navcontroller"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_host"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/week" />
+
+
 
 
 

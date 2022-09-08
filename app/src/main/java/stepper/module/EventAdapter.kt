@@ -40,9 +40,10 @@ class EventAdapter():RecyclerView.Adapter<EventAdapter.MyViewHolder>(){
     }
 
     fun addevent(list:ArrayList<EventModel>){
-        events!!.clear()
-        events!!.addAll(list)
+        events?.clear()
+        events?.addAll(list)
         Log.d("@data",list.toString())
+        events?.reverse()
         notifyDataSetChanged()
     }
 

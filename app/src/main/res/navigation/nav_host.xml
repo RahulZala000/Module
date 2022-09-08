@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/dayFragment">
+
+    <fragment
+        android:id="@+id/dayFragment"
+        android:name="stepper.module.DayFragment"
+        android:label="fragment_day"
+        tools:layout="@layout/fragment_day" >
+    </fragment>
+    <fragment
+        android:id="@+id/weekFragment"
+        android:name="stepper.module.WeekFragment"
+        android:label="fragment_week"
+        tools:layout="@layout/fragment_week" >
+    </fragment>
+    <activity
+        android:id="@+id/eventActivity"
+        android:name="stepper.module.EventActivity"
+        android:label="activity_event"
+        tools:layout="@layout/activity_event" />
+    <fragment
+        android:id="@+id/monthFragment"
+        android:name="stepper.module.MonthFragment"
+        android:label="fragment_month"
+        tools:layout="@layout/fragment_month" >
+        <action
+            android:id="@+id/action_monthFragment_to_eventBottomSheetFragment"
+            app:destination="@id/eventBottomSheetFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/eventBottomSheetFragment"
+        android:name="stepper.module.EventBottomSheetFragment"
+        android:label="EventBottomSheetFragment" >
+        <argument
+            android:name="date"
+            app:argType="java.time.LocalDate" />
+    </dialog>
+</navigation>

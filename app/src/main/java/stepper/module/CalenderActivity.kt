@@ -10,19 +10,23 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import stepper.module.databinding.ActivityCalenderBinding
 import java.time.LocalDateTime
 import com.rahul.calendardayweekview.AdapterClickListener
+import java.time.LocalDate
 import java.util.*
 import kotlin.collections.ArrayList
 
 class CalenderActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityCalenderBinding
-    var date:LocalDateTime= LocalDateTime.now()
+    lateinit var navcontroller:NavController
 
-
+    lateinit var viewmodel:EventViewmodel
     lateinit var event:EventModel
     lateinit var adapter: EventAdapter
 
@@ -33,37 +37,29 @@ class CalenderActivity : AppCompatActivity() {
         binding= ActivityCalenderBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var fragtran=supportFragmentManager.beginTransaction()
-        fragtran.replace(binding.calendar.id,DayFragment())
-        fragtran.commit()
-
-
+        viewmodel=ViewModelProvider(this)[EventViewmodel::class.java]
+        navcontroller=(supportFragmentManager.findFragmentById(R.id.navcontroller) as NavHostFragment).navController
 
         binding.day.setOnClickListener {
-            var fragtran=supportFragmentManager.beginTransaction()
-            fragtran.replace(binding.calendar.id,DayFragment())
-            fragtran.commit()
+           navcontroller.popBackStack()
+            navcontroller.navigate(R.id.dayFragment)
         }
 
         binding.week.setOnClickListener {
-            var fragtran=supportFragmentManager.beginTransaction()
-            fragtran.replace(binding.calendar.id,WeekFragment())
-            fragtran.commit()
+            navcontroller.popBackStack()
+            navcontroller.navigate(R.id.weekFragment)
         }
 
         binding.month.setOnClickListener {
-            var fragtran=supportFragmentManager.beginTransaction()
-            fragtran.replace(binding.calendar.id,MonthFragment())
-            fragtran.commit()
+            navcontroller.popBackStack()
+            navcontroller.navigate(R.id.monthFragment)
         }
 
-
-        //var weekview=binding.weekview
-
-      /*  binding.dayview.setOnClickListener{
-            startActivity(Intent(this,DayActivity::class.java))
-        }
-*/
+     /*   binding.event.setOnClickListener {
+            var intent=Intent(this,EventActivity::class.java)
+            intent.putExtra("Date",LocalDateTime.now())
+            resultlaucer.launch(intent)
+        }*/
 
         resultlaucer = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
@@ -71,32 +67,20 @@ class CalenderActivity : AppCompatActivity() {
                 val data: Intent? = result.data
                event= result.data?.getSerializableExtra("Model") as EventModel
                 viewmodel.addevent(event)
+                Log.d("@d",viewmodel.eventList.size.toString())
               //  adapter.addevent(viewmodel.eventList)
                //adapter.notifyDataSetChanged()
               //  setevent()
             }
 
-
         }
-
-       // setevent()
-/*
-        weekview.listner= object : AdapterClickListener {
-            override fun onItemClick(view: View?, pos: Int, `object`: Any?) {
-                date= `object` as LocalDateTime
-                Toast.makeText(this@CalenderActivity,date.toLocalDate().toString(),Toast.LENGTH_SHORT).show()
-                adapter.addevent(viewmodel.datefilter(date.toLocalDate()))
-                adapter.notifyDataSetChanged()
-            }
-        }*/
     }
 
-    fun newEventAction(view: View) {
-        var intent=Intent(this,EventActivity::class.java)
-        intent.putExtra("Date",date)
-        resultlaucer.launch(intent)
-      //  setevent()
+    override fun navigateUpTo(upIntent: Intent?): Boolean {
+        return navcontroller.navigateUp()
     }
+
+
 
    /* fun setevent(){
 

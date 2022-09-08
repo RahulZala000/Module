@@ -2,9 +2,11 @@ package com.rahul.horizontal_stepper
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.withStyledAttributes
 import androidx.recyclerview.widget.RecyclerView
 import com.rahul.horizontal_stepper.databinding.LayoutStepperBinding
 
@@ -14,10 +16,11 @@ class StepperAdapter(
     var click: List<String>,
     var selectedItem: Int,
     var maxValue: Int,
-    var listner: AdapterClickListener
-) :
+    var listner: AdapterClickListener,
+    var attrs: AttributeSet
+) : RecyclerView.Adapter<StepperAdapter.MyViewHolder>() {
 
-    RecyclerView.Adapter<StepperAdapter.MyViewHolder>() {
+    var currunttextcolor=0
 
     class MyViewHolder(val binding: LayoutStepperBinding) :
         RecyclerView.ViewHolder(binding.root)
@@ -30,6 +33,8 @@ class StepperAdapter(
         holder: MyViewHolder,
         @SuppressLint("RecyclerView") position: Int
     ) {
+
+
 
         if(position==0)
             holder.binding.look0.background=context.getDrawable(R.color.white)
@@ -49,8 +54,7 @@ class StepperAdapter(
             tvPets.text=(position+1).toString()
             tvTextt.text= click.get(position)
             if (selectedItem == position) {
-                holder.binding.tvPets.background =
-                    context.resources.getDrawable(R.drawable.radio_currunt)
+                holder.binding.tvPets.background = context.resources.getDrawable(R.drawable.radio_currunt)
                 holder.binding.tvTextt.setTextColor(context.resources.getColor(R.color.teal_700))
                 holder.binding.tvPets.setTextColor(context.resources.getColor(R.color.teal_700))
 

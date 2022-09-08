@@ -7,14 +7,17 @@ import android.util.AttributeSet
 import android.util.Log
 import android.view.LayoutInflater
 import android.widget.LinearLayout
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.calendardayview.Constant.selectdate
 import com.example.calendardayview.databinding.LayoutDayviewBinding
+import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
 class DayView @JvmOverloads constructor(context: Context,attributeSet: AttributeSet):LinearLayout(context,attributeSet) {
 
     var binding:LayoutDayviewBinding
      var listner:TextChangeListner?=null
+    private var dateList: ArrayList<LocalDateTime> = ArrayList()
 
     init {
         binding = LayoutDayviewBinding.inflate(LayoutInflater.from(context), this)
@@ -31,6 +34,7 @@ class DayView @JvmOverloads constructor(context: Context,attributeSet: Attribute
             setDayView()
         }
 
+
         binding.monthDayText.addTextChangedListener(object : TextWatcher{
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
 
@@ -46,7 +50,6 @@ class DayView @JvmOverloads constructor(context: Context,attributeSet: Attribute
 
         })
     }
-
 
     fun setDayView(){
        // listner.onItem(selectdate)

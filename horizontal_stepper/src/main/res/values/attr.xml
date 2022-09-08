@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" >
+    <declare-styleable name="Stepper">
+        <attr name="curruntsteptextcolor" format="color" />
+        <attr name="curruntstepbackground" format="color" />
+        <attr name="gonesteptextcolor" format="color"/>
+        <attr name="gonestepbackground" format="color"/>
+        <attr name="newsteptextcolor" format="color"/>
+        <attr name="newstepbackgroung" format="color"/>
+    </declare-styleable>
+
+
+</resources>

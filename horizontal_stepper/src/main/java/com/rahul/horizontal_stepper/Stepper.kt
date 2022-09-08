@@ -1,16 +1,13 @@
 package com.rahul.horizontal_stepper
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import android.util.AttributeSet
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import java.util.*
 import kotlin.collections.ArrayList
 
-class Stepper(context:Context,attrs:AttributeSet) : RecyclerView(context,attrs) {
+class Stepper(context:Context,var attrs:AttributeSet) : RecyclerView(context,attrs) {
 
     private var dateList: ArrayList<String> = ArrayList()
     var first=0;
@@ -37,7 +34,7 @@ class Stepper(context:Context,attrs:AttributeSet) : RecyclerView(context,attrs) 
                         listner?.onItemClick(view, pos, `object`)
                     }
 
-                })
+                },attrs)
             setHasFixedSize(true)
             setItemViewCacheSize(dateList.size - 1)
          //   scrollToPosition(this@apply, dateList.size - 1)

@@ -50,11 +50,12 @@ class MonthCalendarAdapter(var days: ArrayList<LocalDate?>, var listner: Adapter
                 holder.datebox.setText("")
 
             if(position==newdate) {
-               // cellDayText.setTextColor(Color.WHITE)
-                parentview.setBackgroundColor(Color.BLUE)
+                holder.datebox.setTextColor(Color.LTGRAY)
+               // parentview.setBackgroundColor(Color.BLUE)
             }
             else
-                parentview.setBackgroundColor(Color.WHITE)
+                holder.datebox.setTextColor(Color.BLACK)
+              //  parentview.setBackgroundColor(Color.WHITE)
 
             if ( data?.monthValue==month.monthValue)
                 datebox.setTextColor(Color.BLACK)
